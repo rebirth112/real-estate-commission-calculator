@@ -3,8 +3,19 @@
     padding: 0;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 body {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
 }
 
 .toplogo, .head {
@@ -15,7 +26,8 @@ body {
 
 #remaxlogo {
     height: auto;
-    min-width: 200px;
+    min-width: 180px;
+    max-width: 400px;
 }
 
 .price {
@@ -32,7 +44,8 @@ body {
     gap: 25px;
     margin-top: 10px;
     margin-bottom: 10px;
-    justify-content: center
+    justify-content: center;
+    align-items: center;
 }
 
 .grosscommission, .buyercommission {
@@ -50,7 +63,7 @@ body {
     margin-top: 25px;
 }
 
-#reset, #calculate {
+#reset, #calculate, .light, .dark {
     cursor: pointer;
     outline: 0;
     color: #fff;
@@ -67,7 +80,7 @@ body {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-#reset:hover, #calculate:hover {
+#reset:hover, #calculate:hover, .light:hover, .dark:hover {
     color: #fff;
     background-color: #c51212;
     border-color: #c70b0b;
@@ -80,10 +93,38 @@ body {
     flex-wrap: wrap;
 }
 
-.gc, .sc, .lc {
+.gc, .sc, .lc, .lightdark {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-bottom: 10px;
     gap: 10px;
 }
+
+.lightdark {
+    margin-top: 25px;
+}
+
+.gc {
+    margin-top: 15px;
+}
+
+.buttons {
+    margin-bottom: 25px;
+}
+
+input[type=number] {
+    border: 1px solid red;
+    border-radius: 4px;
+    padding: 10px 10px;
+}
+
+input[type=number]:focus {
+    background-color: rgb(255, 238, 238);
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
 

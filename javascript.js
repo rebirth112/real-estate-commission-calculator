@@ -14,6 +14,7 @@ let buyerPercent = document.getElementById("buyerpercentage");
 let buyerAdditional = document.getElementById("buyeradditionalbonus");
 let buyerDeduct = document.getElementById("buyerminusdeductions")
 
+
 resetButton.addEventListener('click', function(){
     purchasePrice.value = '';
     firstOne.value = '';
@@ -24,6 +25,9 @@ resetButton.addEventListener('click', function(){
     buyerPercent.value = '';
     buyerAdditional.value = '';
     buyerDeduct.value = '';
+    listComm.innerHTML = '';
+    sellComm.innerHTML = '';
+    grossComm.innerHTML = '';
 })
 
 calcButton.addEventListener('click', function(){
@@ -44,3 +48,24 @@ calcButton.addEventListener('click', function(){
     }
 })
 
+let darkButton = document.getElementById("dark")
+let lightButton = document.getElementById("light")
+let allInput = document.querySelectorAll("input")
+
+darkButton.addEventListener('click', function() {
+    var element = document.body;
+    element.classList.add("dark-mode");
+    allInput.forEach(function(x) {
+        x.style.color = 'white';
+        x.style.backgroundColor = 'black';
+    })
+});
+
+lightButton.addEventListener('click', function() {
+    var element = document.body;
+    element.classList.remove("dark-mode");
+    allInput.forEach(function(x) {
+        x.style.color = 'black';
+        x.style.backgroundColor = 'white';
+    })
+});
