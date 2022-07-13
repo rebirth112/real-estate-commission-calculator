@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculator Sample</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='javascript.js' defer></script>
+</head>
+<body>
+    <div class="toplogo"><img id="remaxlogo" src="logo.webp" alt=""></div>
+    <div class="head"><h2>Commission Calculator</h2></div>
+    <div class="price">
+        <h2>1. Price</h2>
+        <div class="purchasepricefield">
+            <p>Offered Purchase Price</p>
+            <input type="number" id="pprice"/>
+        </div>
+    </div>
+    <div class="allcalc">
+        <div class="grosscommission">
+            <h2>2. Gross Commission</h2>
+            <div class="formgroup">
+                <input type="number" id="firstonehundred">
+                <p>% on first 100k + </p>
+            </div>
+            <div class="formgroup">
+                <input type="number" id="grosspercentage">
+                <p>% on Balance +</p>
+            </div>
+            <div class="formgroup">
+                <input type="number" id="additionalbonus">
+                <p>Additional Bonus</p>
+            </div>
+            <div class="formgroup">
+                <input type="number" id="minusdeductions">
+                <p>Minus Deductions</p>
+            </div>
+        </div>
+        <div class="buyercommission">
+            <h2>3. Buyer's Commission</h2>
+            <div class="formgroup">
+                <input type="number" id="buyeronehundred">
+                <p>% on first 100k + </p>
+            </div>
+            <div class="formgroup">
+                <input type="number" id="buyerpercentage">
+                <p>% on Balance +</p>
+            </div>
+            <div class="formgroup">
+                <input type="number" id="buyeradditionalbonus">
+                <p>Additional Bonus</p>
+            </div>
+            <div class="formgroup">
+                <input type="number" id="buyerminusdeductions">
+                <p>Minus Deductions</p>
+            </div>
+        </div>
+    </div>
+    <div class="totals">
+        <div class="gc">
+            <p>Gross Commission: $</p>
+            <div id="gctotal"></div>
+        </div>
+        <div class="sc">
+            <p>Selling Commission: $</p>
+            <div id="sctotal"></div>
+        </div>
+        <div class="lc">
+            <p>Listing Commission: $</p>
+            <div id="lctotal"></div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="reset">Reset</button>
+        <button id="calculate">Calculate</button>
+    </div>
+</body>
+</html>
