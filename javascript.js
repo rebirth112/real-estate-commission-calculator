@@ -69,3 +69,10 @@ lightButton.addEventListener('click', function() {
         x.style.backgroundColor = 'white';
     })
 });
+
+let stopButton = document.getElementById("stop-background");
+
+stopButton.addEventListener('click', function() {
+    let allHouses = document.getElementById("house-container");
+    allHouses.remove()
+})

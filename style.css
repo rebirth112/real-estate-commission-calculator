@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 input::-webkit-outer-spin-button,
@@ -63,7 +64,7 @@ body {
     margin-top: 25px;
 }
 
-#reset, #calculate, .light, .dark {
+#reset, #calculate, .light, .dark, #stop-background {
     cursor: pointer;
     outline: 0;
     color: #fff;
@@ -80,7 +81,7 @@ body {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-#reset:hover, #calculate:hover, .light:hover, .dark:hover {
+#reset:hover, #calculate:hover, .light:hover, .dark:hover, #stop-background:hover {
     color: #fff;
     background-color: #c51212;
     border-color: #c70b0b;
@@ -93,7 +94,7 @@ body {
     flex-wrap: wrap;
 }
 
-.gc, .sc, .lc, .lightdark {
+.gc, .sc, .lc, .lightdark, .backgroundbutton {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
@@ -125,6 +126,78 @@ input[type=number]:focus {
 .dark-mode {
     background-color: black;
     color: white;
+}
+
+.houses {
+    z-index: 0;
+}
+
+#house {
+    position: fixed;
+    animation: mymove 5s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes mymove {
+    0% {top: 0;}
+    10% {top: 10vh;}
+    20% {top: 20vh;}
+    30% {top: 30vh;}
+    40% {top: 40vh;}
+    50% {top: 50vh;}
+    60% {top: 60vh;}
+    70% {top: 70vh;}
+    80% {top: 80vh;}
+    90% {top: 90vh;}
+    100% {top: 100vh;}
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.house1 {
+    left: 10vh;
+    margin-top: 120px;
+}
+
+.house2 {
+    left: 20vh;
+}
+
+.house3 {
+    left: 30vh;
+    margin-top: 120px;
+}
+
+.house4 {
+    left: 40vh;
+}
+
+.house5 {
+    left: 50vh;
+    margin-top: 120px;
+}
+
+.house6 {
+    right: 10vh;
+    margin-top: 120px;
+}
+
+.house7 {
+    right: 20vh;
+}
+
+.house8 {
+    right: 30vh;
+    margin-top: 120px;
+}
+
+.house9 {
+    right: 40vh;
+}
+
+.house10 {
+    right: 50vh;
+    margin-top: 120px;
 }
 
 
