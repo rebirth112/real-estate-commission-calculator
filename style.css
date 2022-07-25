@@ -26,9 +26,9 @@ body {
 }
 
 #remaxlogo {
-    height: auto;
-    min-width: 180px;
-    max-width: 400px;
+    width: auto;
+    max-height: 140px;
+    min-height: 80px;
 }
 
 .price {
@@ -140,15 +140,6 @@ input[type=number]:focus {
 
 @keyframes mymove {
     0% {top: 0;}
-    10% {top: 10vh;}
-    20% {top: 20vh;}
-    30% {top: 30vh;}
-    40% {top: 40vh;}
-    50% {top: 50vh;}
-    60% {top: 60vh;}
-    70% {top: 70vh;}
-    80% {top: 80vh;}
-    90% {top: 90vh;}
     100% {top: 100vh;}
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
@@ -200,4 +191,8 @@ input[type=number]:focus {
     margin-top: 120px;
 }
 
-
+@media screen and (max-width: 1900px) {
+    #house-container {
+        display:none;
+    }
+}
