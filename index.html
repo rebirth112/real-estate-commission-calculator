@@ -25,55 +25,37 @@
     <buttons class="lightdark">
         <button class="light" id="light">Light Mode</button>
         <button class="dark" id="dark">Dark Mode</button>
+        <div class="backgroundbutton">
+            <button id="stop-background">Stop Animation</button>
+        </div>
     </buttons>
-    <div class="backgroundbutton">
-        <button id="stop-background">Stop Animation</button>
-    </div>
-    <div class="head"><h2>Commission Calculator</h2></div>
     <div class="price">
-        <h2>1. Price</h2>
         <div class="purchasepricefield">
-            <p>Offered Purchase Price</p>
+            <p>Offer Price</p>
             <input type="number" id="pprice"/>
         </div>
     </div>
     <div class="allcalc">
         <div class="grosscommission">
-            <h2>2. Gross Commission</h2>
+            <h2>Gross Commission</h2>
             <div class="formgroup">
                 <input type="number" id="firstonehundred">
-                <p>% on first 100k + </p>
+                <p>% on first $100,000 + </p>
             </div>
             <div class="formgroup">
                 <input type="number" id="grosspercentage">
                 <p>% on Balance +</p>
             </div>
-            <div class="formgroup">
-                <input type="number" id="additionalbonus">
-                <p>Additional Bonus</p>
-            </div>
-            <div class="formgroup">
-                <input type="number" id="minusdeductions">
-                <p>Minus Deductions</p>
-            </div>
         </div>
         <div class="buyercommission">
-            <h2>3. Buyer's Commission</h2>
+            <h2>Buyer's</h2>
             <div class="formgroup">
                 <input type="number" id="buyeronehundred">
-                <p>% on first 100k + </p>
+                <p>% on first $100,000 + </p>
             </div>
             <div class="formgroup">
                 <input type="number" id="buyerpercentage">
                 <p>% on Balance +</p>
-            </div>
-            <div class="formgroup">
-                <input type="number" id="buyeradditionalbonus">
-                <p>Additional Bonus</p>
-            </div>
-            <div class="formgroup">
-                <input type="number" id="buyerminusdeductions">
-                <p>Minus Deductions</p>
             </div>
         </div>
     </div>

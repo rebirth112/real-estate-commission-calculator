@@ -138,6 +138,10 @@ input[type=number]:focus {
     animation-timing-function: linear;
 }
 
+.light, .dark, #stop-background {
+    height: 35px;
+}
+
 @keyframes mymove {
     0% {top: 0;}
     100% {top: 100vh;}
